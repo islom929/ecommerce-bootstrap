@@ -1,0 +1,202 @@
+:root {
+  --color-green:#6a983c;
+  --color-black:#151515;
+  --color-dark:#575757;
+  --color-gray:#a9a9a9;
+  --color-bg-light-gray:#f5f5f5;
+  --color-bg-dark-gray:#f9f9f9;
+  --color-border-dark-green:#46760a;
+  --open-sans: "Open Sans", "Arial", serif;
+  --poppins: "Poppins","Arial", sans-serif;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/fonts/OpenSans-Regular.woff2") format("woff2"),
+  url("../fonts/fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/fonts/Poppins-Medium.woff2") format("woff2"),
+  url("../fonts/fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/fonts/Poppins-Bold.woff2") format("woff2"),
+  url("../fonts/fonts/Poppins-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/fonts/Poppins-SemiBold.woff2") format("woff2"),
+  url("../fonts/fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: var(--open-sans);
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hero-left__item-box {
+  height: 437px;
+  background-color: var(--color-bg-dark-gray);
+}
+
+.info__rating-box span {
+  text-decoration: underline;
+  color: var(--color-gray);
+}
+
+.info__text {
+  line-height: 24px;
+}
+
+.info__dtext {
+  font-family: var(--open-sans);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-gray);
+}
+
+.info__dd {
+  font-family: var(--open-sans);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-black);
+}
+
+.info__text-underline {
+  text-decoration: underline;
+}
+
+.info__price-sale {
+  color: var(--color-green);
+}
+
+.info__price-sale span {
+  color: var(--color-gray);
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+.info__price-button {
+  background-image: url("../img/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: left 20px center ;
+}
+
+.info__select {
+  color: var(--color-gray);
+}
+
+.info__compare-item span {
+  background-image: url("../img/icon-wish.svg");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: left 20px center;
+}
+
+.info__compare-item:nth-child(2) span{
+  background-image: url("../img/icon-compare.svg");
+}
+
+.description__dd {
+  font-family: var(--open-sans);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.vitamins-item__text{
+  font-family: var(--open-sans);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-dark);
+}
+
+.vitamins__list {
+  position: relative;
+}
+
+.vitamins__list::before{
+  content: "";
+  width: 115%;
+  height: 1px;
+  display: block;
+  background-color: var(--color-bg-light-gray);
+  position: absolute;
+  top: 30px;
+}
+
+.description__link {
+  display: flex;
+}
+
+.description__link::after{
+  content: "18";
+  width: auto;
+  height: auto;
+  display: block;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #F4F8EC;
+  border-radius: 12px;
+  text-align: center;
+  color: var(--color-green);
+}
+
+.description__link-second::after {
+  content: "4";
+}
